@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.5s; /* Add transition for background color change */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    transition: background-color 0.5s; /* Add transition for background color change */
+    z-index: 1000; /* Set a high z-index to ensure it's above other elements */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #4CAF50; /* Change the color on hover */
+}
+
+.hero {
+    min-height: 600px; /* Adjust the height as needed */
+    background-image: url('images/89787.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1, .hero p, .cta-button {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s, transform 1s;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.about {
+    min-height: 400px; /* Adjust the height as needed */
+    text-align: center;
+    padding: 50px 20px;
+    transition: opacity 1s, transform 1s;
+}
+
+/* Extend the height of the extra-content section */
+.extra-content {
+    min-height: 600px; /* Adjust the height as needed */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Add styles for scroll-up and scroll-down */
+body.scroll-up header {
+    background-color: #333;
+}
+
+body.scroll-down header {
+    background-color: #222; /* Change background color on scroll down */
+}
